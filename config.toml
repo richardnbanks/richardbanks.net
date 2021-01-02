@@ -1,0 +1,184 @@
+baseURL = "https://richardbanks.net/"
+DefaultContentLanguage = "en"
+title = "Inquisitive By Nature"
+theme = "hugo-future-imperfect-slim"
+paginate = 5
+disqusShortname = ""
+googleAnalytics = ""
+pluralizeListTitles = false
+disableLanguages = []
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputs]
+home = ["html", "json", "rss"]
+
+[params]
+author = "Richard Banks"
+mainSections = ['blog']
+enableCDN = false
+cssFiles = ["default"]
+jsFiles = ["default"]
+highlightjs = true
+highlightjsTheme = "a11y-dark"
+highlightjsLang = []
+viewMorePostsLink = "/blog/"
+readingTime = true
+imageStretch = ""
+removeBlur = true
+socialShare = ["twitter", "facebook", "reddit", "email"]
+hideEmptyStats = false
+
+[params.meta]
+description = "Inquisitive By Nature. Thoights on life, business and technology."
+author = "Richard Banks"
+favicon = false
+svg = true
+faviconVersion = "1"
+msColor = "#ffffff"
+iOSColor = "#ffffff"
+
+[params.header]
+navbarTitle = "Inquisitive By Nature"
+dynamicTitles = false
+searchMenu = true
+shareMenu = false
+languageMenu = false
+
+[params.intro]
+header = "Inquisitive By Nature"
+paragraph = "Thoughts on life, business and technology."
+rssIntro = true
+socialIntro = true
+hideWhenSingleColumn = false
+alwaysOnHomepage = false
+
+[params.intro.pic]
+src = "img/main/logo.jpg"
+shape = "circle"
+width = ""
+alt = "Inquisitive By Nature"
+
+[params.sidebar]
+about = "This theme was developed for Hugo static site generator."
+postAmount = 5
+categories = true
+categoriesByCount = true
+
+[params.footer]
+rssFooter = false
+socialFooter = false
+
+[params.staticman]
+enabled = false
+api = ""  # No Trailing Slash
+gitProvider = ""
+username = ""
+repo = ""
+branch = ""
+
+[params.staticman.recaptcha]
+siteKey = ""
+encryptedKey = ""
+
+[menu]
+
+[[menu.main]]
+name = "Home"
+identifier = "home"
+url = "/"
+pre = "<i class='fa fa-home'></i>"
+weight = 1
+
+[[menu.main]]
+name = "About"
+identifier = "about"
+url = "/about/"
+pre = "<i class='far fa-id-card'></i>"
+weight = 2
+
+[[menu.main]]
+name = "Blog"
+identifier = "blog"
+url = "/blog/"
+pre = "<i class='far fa-newspaper'></i>"
+weight = 3
+
+[[menu.main]]
+name = "Categories"
+identifier = "categories"
+url = "/categories/"
+pre = "<i class='fas fa-sitemap'></i>"
+weight = 5
+
+[[menu.main]]
+name = "Guides"
+identifier = "guides"
+url = "/guides/"
+pre = "<i class='far fa-map'></i>"
+weight = 6
+
+[[menu.main]]
+name = "Contact"
+identifier = "contact"
+url = "/contact/"
+pre = "<i class='far fa-envelope'></i>"
+weight = 7
+
+[Languages]
+
+[Languages.en]
+LanguageCode = "en"
+LanguageName = "English"
+weight = 1
+
+[social]
+# Coding Communities
+github = "richardnbanks"
+gitlab = ""
+stackoverflow = "" # User Number
+bitbucket = ""
+jsfiddle = ""
+codepen = ""
+# Visual Art Communities
+deviantart = ""
+flickr = ""
+behance = ""
+dribbble = ""
+# Publishing Communities
+wordpress = ""
+medium = ""
+# Professional/Business Oriented Communities
+linkedin = "richardnbanks"
+linkedin_company = ""
+foursquare = ""
+xing = ""
+slideshare = ""
+# Social Networks
+facebook = ""
+googleplus = ""
+reddit = ""
+quora = ""
+youtube = "richardnbanks"
+vimeo = ""
+whatsapp = "" # WhatsApp Number
+# WeChat and QQ need testing.
+wechat = ""
+qq = "" # User ID Numberimages
+instagram = "richardnbanks"
+tumblr = ""
+twitter = "richardnbanks"
+strava = ""
+skype = ""
+snapchat = ""
+pinterest = ""
+telegram = ""
+vine = ""
+googlescholar = ""
+orcid = ""
+researchgate = ""
+keybase = "richardnbanks"
+mastodon = ""
+# Email
+email = ""
