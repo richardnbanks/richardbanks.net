@@ -1,10 +1,11 @@
 [build]
-publish = "public/"
-command = "hugo"
+publish = "public"
+command = "hugo --gc --minify"
 
-[context.production]
-publish = "public/"
-command = "hugo"
+[context.production.environment]
+HUGO_VERSION = "0.80.0"
+HUGO_ENV = "production"
+HUFO_ENABLEGITINFO = "true"
 
 [[redirects]]
 
