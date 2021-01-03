@@ -2,16 +2,6 @@
 publish = "public"
 command = "hugo --gc --minify"
 
-[context.production.environment]
-HUGO_VERSION = "0.80.0"
-HUGO_ENV = "production"
-HUFO_ENABLEGITINFO = "true"
-
-[[redirects]]
-
-[redirects.headers]
-X-From = "Netlify"
-
 [[headers]]
 for = "/*"
 
@@ -19,3 +9,16 @@ for = "/*"
 X-Frame-Options = "SAMEORIGIN"
 X-XSS-Protection = "1; mode=block"
 Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[plugins]]
+package = "netlify-plugin-submit-sitemap"
+
+[plugins.inputs]
+baseUrl = "https://richardbanks.net"
+sitemapPath = "/sitemap.xml"
+
+providers = [
+  "google",
+  "bing",
+  "yandex"
+]
