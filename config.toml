@@ -113,9 +113,9 @@ pre = "<i class='fas fa-sitemap'></i>"
 weight = 5
 
 [[menu.main]]
-name = "Guides"
-identifier = "guides"
-url = "/guides/"
+name = "Thoughts"
+identifier = "thoughts"
+url = "/thoughts/"
 pre = "<i class='far fa-map'></i>"
 weight = 6
 
